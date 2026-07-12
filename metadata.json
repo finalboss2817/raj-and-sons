@@ -1,0 +1,6 @@
+{
+  "name": "Raj & Sons",
+  "description": "Premium heritage luxury eyewear brand and trusted vision care since 1992. Venture by Meena Technologies.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
