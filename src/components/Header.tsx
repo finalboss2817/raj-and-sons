@@ -5,7 +5,7 @@
 
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "motion/react";
-import { Menu, X, Phone, ShieldAlert, Sparkles } from "lucide-react";
+import { Menu, X, Phone, Sparkles } from "lucide-react";
 
 interface HeaderProps {
   activeTab: string;
@@ -89,30 +89,10 @@ export default function Header({ activeTab, setActiveTab, openBookingWithFrame }
               <Phone className="h-3.5 w-3.5 text-coral" />
               <span>9920300750</span>
             </a>
-            
-            <button
-              onClick={() => setActiveTab("admin")}
-              className={`p-2 text-navy/40 hover:text-coral transition-colors cursor-pointer rounded-full hover:bg-navy/5 ${
-                activeTab === "admin" ? "text-coral bg-navy/5" : ""
-              }`}
-              title="Admin Portal"
-              id="header-admin-btn"
-            >
-              <ShieldAlert className="h-4 w-4" />
-            </button>
           </div>
 
           {/* Mobile Menu Icon */}
           <div className="flex items-center gap-3 lg:hidden">
-            <button
-              onClick={() => setActiveTab("admin")}
-              className={`p-2 text-navy/40 hover:text-coral transition-colors cursor-pointer rounded-full ${
-                activeTab === "admin" ? "text-coral bg-navy/5" : ""
-              }`}
-              title="Admin Portal"
-            >
-              <ShieldAlert className="h-4 w-4" />
-            </button>
             <button
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
               className="p-1 text-navy hover:text-coral cursor-pointer"

@@ -5,12 +5,18 @@
 
 import { FrameProduct, BlogArticle } from "./types";
 
+// Import local image assets for reliable Vite production building and bundling
+import heroImage from "./assets/images/hero_eyewear_1783875347272.jpg";
+import tr90Image from "./assets/images/tr90_spectacles_1783875364422.jpg";
+import metalImage from "./assets/images/gold_metal_spectacles_1783875378333.jpg";
+import acetateImage from "./assets/images/tortoise_acetate_spectacles_1783875392040.jpg";
+
 // Dynamic generated assets loaded securely
 export const GENERATED_IMAGES = {
-  hero: "/src/assets/images/hero_eyewear_1783875347272.jpg",
-  tr90: "/src/assets/images/tr90_spectacles_1783875364422.jpg",
-  metal: "/src/assets/images/gold_metal_spectacles_1783875378333.jpg",
-  acetate: "/src/assets/images/tortoise_acetate_spectacles_1783875392040.jpg",
+  hero: heroImage,
+  tr90: tr90Image,
+  metal: metalImage,
+  acetate: acetateImage,
 };
 
 export const FRAME_CATEGORIES: FrameProduct[] = [
