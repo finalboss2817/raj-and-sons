@@ -20,14 +20,29 @@ export default function Footer({ setActiveTab }: FooterProps) {
           
           {/* Column 1: Brand & Legacy Heritage */}
           <div className="md:col-span-5 flex flex-col items-start text-left">
-            <div className="flex items-center gap-2 mb-4">
-              <span className="font-serif text-3xl font-black tracking-widest text-white">
-                RAJ & SONS
-              </span>
-              <span className="border border-coral/30 px-1.5 py-0.5 font-mono text-[9px] tracking-widest text-coral uppercase rounded-sm">
-                Since 1992
-              </span>
+            <div className="flex items-center gap-3.5 mb-5">
+              <div className="bg-white/95 p-1 rounded-sm shadow-md">
+                <img
+                  src="/assets/aistudio/WhatsApp_Image_2026-11-07_at_12.54.27_PM_6e9ce650.jpeg"
+                  alt="Raj & Sons Eyewear Crest Logo"
+                  className="h-12 w-auto object-contain"
+                />
+              </div>
+              <div className="flex flex-col">
+                <div className="flex items-center gap-2">
+                  <span className="font-serif text-3xl font-black tracking-widest text-white leading-none">
+                    RAJ & SONS
+                  </span>
+                  <span className="border border-coral/30 px-1.5 py-0.5 font-mono text-[9px] tracking-widest text-coral uppercase rounded-sm">
+                    Since 1992
+                  </span>
+                </div>
+                <span className="font-sans text-[11px] tracking-widest text-ivory/60 uppercase mt-1">
+                  Three Decades of Trusted Vision
+                </span>
+              </div>
             </div>
+
             
             <p className="font-sans text-sm text-ivory/70 leading-relaxed max-w-sm mb-6">
               Three Decades of Trusted Vision. Over thirty years of family-owned optical care, bespoke glass milling, and premium frame selection.

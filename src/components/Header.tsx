@@ -36,21 +36,35 @@ export default function Header({ activeTab, setActiveTab, openBookingWithFrame }
               setActiveTab("products");
               window.scrollTo({ top: 0, behavior: "smooth" });
             }}
-            className="group flex flex-col items-start text-left cursor-pointer focus:outline-none"
+            className="group flex items-center gap-3 md:gap-4 text-left cursor-pointer focus:outline-none"
             id="brand-logo"
+            aria-label="Raj & Sons Home"
           >
-            <div className="flex items-center gap-1.5">
-              <span className="font-serif text-2xl font-bold tracking-widest text-navy md:text-3xl">
-                RAJ & SONS
-              </span>
-              <span className="border border-coral/30 px-1.5 py-0.5 font-mono text-[9px] tracking-widest text-coral uppercase rounded-sm">
-                Since 1992
+            {/* Authentic Heritage Crest Badge */}
+            <div className="relative shrink-0 flex items-center justify-center">
+              <img
+                src="/assets/aistudio/WhatsApp_Image_2026-11-07_at_12.54.27_PM_6e9ce650.jpeg"
+                alt="Raj & Sons Eyewear Crest Logo"
+                className="h-11 md:h-13 w-auto object-contain mix-blend-multiply filter drop-shadow-xs transition-transform duration-300 group-hover:scale-105"
+              />
+            </div>
+
+            {/* Adjacent Large Text Typography */}
+            <div className="flex flex-col justify-center">
+              <div className="flex items-center gap-2">
+                <span className="font-serif text-2xl md:text-3xl font-bold tracking-widest text-navy leading-none">
+                  RAJ & SONS
+                </span>
+                <span className="hidden sm:inline-block border border-coral/30 bg-coral/5 px-1.5 py-0.5 font-mono text-[9px] tracking-widest text-coral uppercase rounded-xs">
+                  Since 1992
+                </span>
+              </div>
+              <span className="font-sans text-[10px] md:text-[11px] tracking-widest text-navy/60 uppercase mt-1 font-medium leading-tight">
+                A Venture by Meena Technologies
               </span>
             </div>
-            <span className="font-sans text-[10px] tracking-widest text-navy/60 uppercase mt-0.5">
-              A Venture by Meena Technologies
-            </span>
           </button>
+
 
           {/* Desktop Navigation */}
           <nav className="hidden items-center gap-8 lg:flex">
@@ -122,6 +136,23 @@ export default function Header({ activeTab, setActiveTab, openBookingWithFrame }
             className="border-t border-navy/5 bg-white lg:hidden"
           >
             <div className="flex flex-col gap-4 px-6 py-6">
+              {/* Mobile Drawer Brand Header */}
+              <div className="flex items-center gap-3 pb-4 border-b border-navy/5">
+                <img
+                  src="/assets/aistudio/WhatsApp_Image_2026-11-07_at_12.54.27_PM_6e9ce650.jpeg"
+                  alt="Raj & Sons Eyewear Crest Logo"
+                  className="h-10 w-auto object-contain mix-blend-multiply"
+                />
+                <div>
+                  <span className="font-serif text-xl font-bold tracking-widest text-navy block leading-none">
+                    RAJ & SONS
+                  </span>
+                  <span className="font-sans text-[10px] tracking-widest text-navy/60 uppercase mt-0.5 block">
+                    Since 1992 • Bespoke Eyewear
+                  </span>
+                </div>
+              </div>
+
               {navItems.map((item) => (
                 <button
                   key={item.id}
