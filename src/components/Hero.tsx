@@ -123,16 +123,32 @@ export default function Hero({ setActiveTab, scrollToCatalog }: HeroProps) {
             className="mt-10 flex flex-wrap gap-4"
           >
             <button
+              onClick={() => {
+                const el = document.getElementById("ai-smart-glasses");
+                if (el) {
+                  el.scrollIntoView({ behavior: "smooth" });
+                } else {
+                  setActiveTab("smart-glasses");
+                }
+              }}
+              className="flex items-center gap-2 bg-coral hover:bg-coral-dark px-7 py-4 text-sm font-bold tracking-widest uppercase text-navy-dark transition-all duration-300 rounded-xs cursor-pointer shadow-lg shadow-coral/20 hover:-translate-y-0.5"
+              id="hero-ai-glasses"
+            >
+              <Sparkles className="h-4 w-4 fill-navy-dark animate-pulse" />
+              <span>AI Smart Glasses</span>
+            </button>
+
+            <button
               onClick={scrollToCatalog}
-              className="border-b-2 border-coral hover:bg-coral px-8 py-4 text-sm font-semibold tracking-widest uppercase text-white hover:text-navy-dark transition-all duration-300 rounded-xs cursor-pointer"
+              className="border border-ivory/30 hover:border-coral hover:bg-white/5 px-7 py-4 text-sm font-semibold tracking-widest uppercase text-white hover:text-coral transition-all duration-300 rounded-xs cursor-pointer"
               id="hero-explore"
             >
-              Explore Collection
+              Explore Runway & Optics
             </button>
 
             <button
               onClick={() => setActiveTab("trial")}
-              className="flex items-center gap-2.5 border border-ivory/20 hover:border-coral bg-white/5 hover:bg-white/10 px-8 py-4 text-sm font-semibold tracking-widest uppercase text-ivory hover:text-coral transition-all duration-300 rounded-xs cursor-pointer"
+              className="flex items-center gap-2.5 border border-ivory/20 hover:border-coral bg-white/5 hover:bg-white/10 px-7 py-4 text-sm font-semibold tracking-widest uppercase text-ivory hover:text-coral transition-all duration-300 rounded-xs cursor-pointer"
               id="hero-trial"
             >
               <Calendar className="h-4 w-4" />

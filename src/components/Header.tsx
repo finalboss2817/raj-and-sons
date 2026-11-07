@@ -17,11 +17,12 @@ export default function Header({ activeTab, setActiveTab, openBookingWithFrame }
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const navItems = [
-    { id: "products", label: "Optical Catalog" },
-    { id: "trial", label: "Book Home Trial", highlight: true },
+    { id: "products", label: "Catalog & Designer" },
+    { id: "smart-glasses", label: "AI Smart Glasses", highlight: true, isNew: true },
+    { id: "trial", label: "Book Home Trial" },
     { id: "about", label: "Our Legacy" },
     { id: "blogs", label: "Editorial Blogs" },
-    { id: "store", label: "Our Store & Partners" },
+    { id: "store", label: "Store & Partners" },
   ];
 
   return (
@@ -68,6 +69,11 @@ export default function Header({ activeTab, setActiveTab, openBookingWithFrame }
               >
                 {item.highlight && <Sparkles className="h-3.5 w-3.5 text-coral animate-pulse" />}
                 {item.label}
+                {item.isNew && (
+                  <span className="bg-coral text-white text-[9px] font-mono font-bold px-1.5 py-0.5 rounded-full uppercase ml-1 shadow-xs">
+                    NEW
+                  </span>
+                )}
                 {activeTab === item.id && (
                   <motion.div
                     layoutId="activeNavLine"
@@ -128,7 +134,12 @@ export default function Header({ activeTab, setActiveTab, openBookingWithFrame }
                   }`}
                 >
                   {item.highlight && <Sparkles className="h-4 w-4 text-coral" />}
-                  {item.label}
+                  <span>{item.label}</span>
+                  {item.isNew && (
+                    <span className="bg-coral text-white text-[9px] font-mono font-bold px-1.5 py-0.5 rounded-full uppercase ml-auto shadow-xs">
+                      NEW
+                    </span>
+                  )}
                 </button>
               ))}
               <div className="h-[1px] w-full bg-navy/5 my-2" />

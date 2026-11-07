@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import { FrameProduct, BlogArticle } from "./types";
+import { FrameProduct, BlogArticle, SmartGlassesVideo } from "./types";
 
 // Import local image assets for reliable Vite production building and bundling
 import heroImage from "./assets/images/hero_eyewear_1783875347272.jpg";
@@ -19,7 +19,226 @@ export const GENERATED_IMAGES = {
   acetate: acetateImage,
 };
 
+export const SMART_GLASSES_VIDEOS: SmartGlassesVideo[] = [
+  {
+    id: "mt5-ultra",
+    title: "Next-Generation Smart AI Glasses (MT5 & MT5 Ultra)",
+    subtitle: "First-Person View • AI Smart Assistant • Surround Sound Audio • Multi-Language Translation",
+    videoSrc: "/assets/aistudio/WhatsApp_Video_2026-11-07_at_1.29.40_PM_f1250dfa.mp4",
+    model: "MT5 Ultra & MT5 Series",
+    duration: "0:15",
+    tags: ["4K FPV Camera", "AI Chipset", "Surround Sound", "Real-Time Translation", "Leather Power Case"],
+    description: "Equipped with an advanced AI coprocessor, open-ear acoustic surround sound channels, and a companion luxury genuine leather charging case. Experience hands-free photos, real-time voice translation, and AI assistance on the go.",
+    highlights: [
+      "First-Person View 4K camera capture",
+      "Integrated AI Smart Assistant coprocessor",
+      "Surround sound open-ear acoustic channels",
+      "Instant multi-language simultaneous translation",
+      "Handcrafted leather charging case with magnetic power clasp"
+    ]
+  },
+  {
+    id: "s2-max-presentation",
+    title: "AIMB S2 Max Smart Spectacles Unboxing & Demo",
+    subtitle: "3-in-1 Interchangeable Lenses • RDGLASS App Connectivity • AI Dialogue Translation",
+    videoSrc: "/assets/aistudio/WhatsApp_Video_2026-11-07_at_1.29.44_PM_1bc7769c.mp4",
+    model: "AIMB S2 Max (White, Black, Blue)",
+    duration: "0:59",
+    tags: ["3-in-1 Lenses", "Red Key On/Off", "RDGLASS Mobile App", "AI Image Recognition", "Touch Swipes"],
+    description: "Complete presentation of the new AIMB S2 Max. Features 3-in-1 lens modularity (clear, polarized sunglass clip, blue tint), Red-Button intuitive power, mobile app pairing, dialogue translation, voice transcription, and temple touch gestures.",
+    highlights: [
+      "Modular 3-in-1 quick-swap lens system with polarized & colored clips",
+      "Full RDGLASS companion app integration for iOS & Android",
+      "AI Image Recognition & instant camera preview",
+      "Dialogue translation & simultaneous audio interpretation",
+      "Touch gesture controls: Double tap play/pause, swipe for volume, long press skip"
+    ]
+  },
+  {
+    id: "4k-uv-smart-glasses",
+    title: "4K HD AI Glasses with Photochromic UV Color Changing Lenses",
+    subtitle: "Realistic 4K Shooting • 32GB Storage • Magnetic Snap Charge • Dual Stereo Design",
+    videoSrc: "/assets/aistudio/WhatsApp_Video_2026-11-07_at_1.29.39_PM_1085432f.mp4",
+    model: "4K AI Vision Pro Series",
+    duration: "0:26",
+    tags: ["4K HD Camera", "32GB Memory", "UV Auto Color Change", "Magnetic Charging", "Slide Switch"],
+    description: "Captures true-to-life 4K first-person videos directly to onboard 32GB high-speed memory. Features revolutionary photochromic lenses that darken automatically under ultraviolet sunlight and clear up indoors.",
+    highlights: [
+      "4000 Ultra High-Definition camera with realistic color science",
+      "32GB onboard flash storage for direct video and photo recording",
+      "UV automatic color-changing photochromic transition lenses",
+      "Magnetic pin-dock quick charging system",
+      "Tactile slide on/off switch & dual-channel stereo acoustic drivers"
+    ]
+  }
+];
+
 export const FRAME_CATEGORIES: FrameProduct[] = [
+  // --- NEW HAUTE COUTURE RUNWAY PIECES (AUTHENTIC STOCK) ---
+  {
+    id: "prada-b17-runway",
+    name: "Prada B17 Runway Black",
+    category: "Haute Couture",
+    subCategory: "Haute Couture",
+    designerBrand: "Prada Milano",
+    modelCode: "B17 Runway",
+    startingPrice: 3499,
+    description: "Bold architectural black acetate silhouette showcasing the iconic silver Prada Milano triangle emblem. Packaged with the authentic textured Saffiano red & black hard case and luxury presentation box.",
+    image: "/assets/aistudio/WhatsApp_Image_2026-11-07_at_1.29.41_PM_54537955.jpeg",
+    features: ["Prada Milano Silver Inlay", "Signature Saffiano Red Hard Case", "High-Gloss Heavyweight Acetate", "Made in Italy CE Hallmark"],
+    availableColors: ["Jet Black Runway Edition"],
+    packageIncludes: "Prada Saffiano Red/Black Hard Case + Luxury Gift Box + Microfiber Dust Cloth",
+    badge: "Runway Collection",
+    isNew: true
+  },
+  {
+    id: "cartier-135-rimless",
+    name: "Cartier 135 Rimless Heritage",
+    category: "Haute Couture",
+    subCategory: "Haute Couture",
+    designerBrand: "Cartier Paris",
+    modelCode: "135 Rimless",
+    startingPrice: 4299,
+    description: "Ultra-prestigious 18k gold-finish fluted temples with double C-decor hinges and beveled hexagonal rimless sun lenses. Includes Cartier's signature royal burgundy leather case and red presentation box.",
+    image: "/assets/aistudio/WhatsApp_Image_2026-11-07_at_1.29.41_PM__2__8e6cf90b.jpeg",
+    features: ["18k Gold Plated Fluted Temples", "Diamond-Beveled Hexagonal Lenses", "Signature Burgundy Leather Case", "Cartier Paris Engraved Hardware"],
+    availableColors: ["18k Gold / Smoky Slate Tint"],
+    packageIncludes: "Cartier Red Luxury Box + Royal Burgundy Leather Case + Microfiber Cloth",
+    badge: "Ultra Luxury",
+    isNew: true
+  },
+  {
+    id: "louis-vuitton-984-millionaire",
+    name: "Louis Vuitton 984 Millionaire",
+    category: "Haute Couture",
+    subCategory: "Haute Couture",
+    designerBrand: "Louis Vuitton",
+    modelCode: "984 Millionaire",
+    startingPrice: 3899,
+    description: "The iconic deep square aviator silhouette with a polished gold top brow bar, LV monogram engraving, and warm amber-yellow sun lenses. Packaged with brown leather capsule and saffron LV box.",
+    image: "/assets/aistudio/WhatsApp_Image_2026-11-07_at_1.29.42_PM_d395e0bb.jpeg",
+    features: ["Gold Monogram Metal Brow Bar", "Amber High-Contrast Lenses", "Sculpted Beveled Temples", "LV Hard Capsule & Saffron Box"],
+    availableColors: ["Gloss Black / Warm Amber / Gold Bar"],
+    packageIncludes: "Louis Vuitton Saffron Box + Brown Leather Capsule Case + Velvet Dust Pouch",
+    badge: "Collector's Icon",
+    isNew: true
+  },
+  {
+    id: "dita-844-titanium",
+    name: "DITA 844 Titanium & Woodgrain",
+    category: "Haute Couture",
+    subCategory: "Haute Couture",
+    designerBrand: "DITA Optical",
+    modelCode: "844 Select",
+    startingPrice: 3299,
+    description: "Handcrafted round-octagonal titanium wire chassis with rich hand-finished woodgrain acetate temples and warm gradient lenses. Includes gold-crested DITA presentation box and structured magnetic case.",
+    image: "/assets/aistudio/WhatsApp_Image_2026-11-07_at_1.29.41_PM__1__ffff1d1d.jpeg",
+    features: ["Japanese Titanium Chassis", "Hand-Finished Woodgrain Temples", "Dual-Tone Gradient Lenses", "Gold-Embossed Crest Case"],
+    availableColors: ["Gunmetal / Espresso Woodgrain"],
+    packageIncludes: "DITA Optical Crest Box + Hard Clamshell Case + Microfiber Pouch",
+    badge: "Bespoke Titanium",
+    isNew: true
+  },
+  {
+    id: "miu-miu-073-butterfly",
+    name: "Miu Miu 073 Butterfly Wing",
+    category: "Haute Couture",
+    subCategory: "Haute Couture",
+    designerBrand: "Miu Miu Milano",
+    modelCode: "073 Butterfly",
+    startingPrice: 3199,
+    description: "Delicate rimless butterfly silhouette featuring gradient rose blush lenses, polished gold bridge brackets, and pastel pink temples. Packaged with Miu Miu signature blush pink velvet case and presentation box.",
+    image: "/assets/aistudio/WhatsApp_Image_2026-11-07_at_1.29.43_PM__1__92365ff2.jpeg",
+    features: ["Rimless Butterfly Wing Cut", "Blush Pink Gradient Lenses", "Polished Gold Bridge Clamp", "Miu Miu Signature Blush Velvet Case"],
+    availableColors: ["Blush Pink Gradient / Gold Accents"],
+    packageIncludes: "Miu Miu Blush Pink Box + Soft Suede Hard Case + Velvet Pouch",
+    badge: "Haute Couture",
+    isNew: true
+  },
+
+  // --- NEW FAHRENHEIT ARCHITECTURAL OPTICAL SERIES ---
+  {
+    id: "fahrenheit-fa-2306",
+    name: "Fahrenheit FA-2306 Custom Core",
+    category: "Fahrenheit Series",
+    subCategory: "Fahrenheit Series",
+    designerBrand: "Fahrenheit Eyewear",
+    modelCode: "FA-2306",
+    startingPrice: 1299,
+    description: "Refined square optical frame cut from premium Italian acetate with an exposed custom-chiseled temple core wire. Features dual-pin rivets and precision 5-barrel hinges.",
+    image: "/assets/aistudio/WhatsApp_Image_2026-11-07_at_1.29.40_PM_a40a6fae.jpeg",
+    features: ["Visible Chiseled Core Wire", "Handcrafted Italian Acetate", "5-Barrel Precision Hinges", "Dual-Pin Rivet Accents"],
+    availableColors: ["C2: Dark Demi Tortoise & Turquoise", "C3: Sapphire Crystal Blue"],
+    packageIncludes: "Fahrenheit Magnetic Hard Case + Optical Lens Cloth",
+    badge: "Architectural Acetate",
+    isNew: true
+  },
+  {
+    id: "fahrenheit-2271",
+    name: "Fahrenheit 2271 Modern Classic",
+    category: "Fahrenheit Series",
+    subCategory: "Fahrenheit Series",
+    designerBrand: "Fahrenheit Eyewear",
+    modelCode: "2271",
+    startingPrice: 1199,
+    description: "Ergonomic square optical frame with an architectural beveled brow, comfortable saddle bridge, and featherlight structural balance.",
+    image: "/assets/aistudio/WhatsApp_Image_2026-11-07_at_1.29.40_PM__1__9edbc7b0.jpeg",
+    features: ["Beveled Modern Brow", "Saddle Nose Contour", "Matte & Gloss Dual Options", "All-Day Working Balance"],
+    availableColors: ["C1: Jet Black", "C2: Dark Havana Tortoise", "C3: Matte Wood Mahogany"],
+    packageIncludes: "Fahrenheit Protective Eyewear Case + Microfiber Cloth",
+    badge: "Executive Daily",
+    isNew: true
+  },
+  {
+    id: "fahrenheit-fa-7848",
+    name: "Fahrenheit FA-7848 Double Bridge",
+    category: "Fahrenheit Series",
+    subCategory: "Fahrenheit Series",
+    designerBrand: "Fahrenheit Eyewear",
+    modelCode: "FA-7848",
+    startingPrice: 1349,
+    description: "Contemporary double-bridge square acetate frame engineered for bold intellectual presence. Available in four statement chromatic acetates including olive and deep navy.",
+    image: "/assets/aistudio/WhatsApp_Image_2026-11-07_at_1.29.43_PM_164597d0.jpeg",
+    features: ["Architectural Double Top Bridge", "Deep Chromatic Translucent Acetate", "Reinforced Temple Hinges", "Signature V-Insignia on Lens"],
+    availableColors: ["C1: Pitch Black", "C2: Slate Gunmetal", "C5: Royal Navy Blue", "C4: Forest Olive Green"],
+    packageIncludes: "Fahrenheit Travel Case + Optical Inspection Certificate",
+    badge: "Statement Series",
+    isNew: true
+  },
+  {
+    id: "fahrenheit-fa-7850",
+    name: "Fahrenheit FA-7850 Angular Statement",
+    category: "Fahrenheit Series",
+    subCategory: "Fahrenheit Series",
+    designerBrand: "Fahrenheit Eyewear",
+    modelCode: "FA-7850",
+    startingPrice: 1399,
+    description: "High-fashion angular geometric eyeglasses featuring an elevated brow slant and rich vibrant color formulations. Perfect for progressive and single-vision wearers.",
+    image: "/assets/aistudio/WhatsApp_Image_2026-11-07_at_1.29.44_PM_b72e7fb2.jpeg",
+    features: ["Angular Geometric Slant", "Rich Color-Infused Blocks", "Anti-Slip Ergonomic Temple Tips", "HD Optical Clarity Ready"],
+    availableColors: ["C4: Crimson Amber Red", "C3: Royal Cobalt Blue"],
+    packageIncludes: "Fahrenheit Hard Shell Case + Lens Cleaning Solution",
+    badge: "Modern Avant-Garde",
+    isNew: true
+  },
+  // --- NEXT-GEN AI SMART GLASSES SHOWROOM ITEM ---
+  {
+    id: "ai-smart-glasses-mt5",
+    name: "Next-Gen AI Smart Glasses (MT5 Ultra & S2 Max)",
+    category: "Smart AI",
+    subCategory: "Smart AI",
+    designerBrand: "Meena Tech AI Innovations",
+    modelCode: "MT5 Ultra & S2 Max",
+    startingPrice: 4999,
+    description: "Next-generation smart eyewear with 4K First-Person View camera, AI Voice Assistant, 30+ language real-time dialogue translation, open-ear surround sound, photochromic UV lenses, and luxury leather charging case.",
+    image: "/assets/aistudio/WhatsApp_Image_2026-11-07_at_1.29.41_PM_54537955.jpeg",
+    features: ["4K FPV Video & Photo Recording", "Real-Time 30+ Language Dialogue Translation", "Dual Stereo Open-Ear Audio", "Photochromic Auto UV Lens Transitions", "Leather Charging Power Vault"],
+    availableColors: ["Obsidian Black", "Frost White", "Denim Blue"],
+    packageIncludes: "Leather Power Case + 3-in-1 Quick-Swap Lens Kit + Magnetic Snap Cable",
+    badge: "Next-Gen Tech",
+    isNew: true
+  },
+
   {
     id: "tr90-frames",
     name: "TR90 Frames",

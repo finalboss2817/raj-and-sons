@@ -7,11 +7,31 @@ export interface FrameProduct {
   id: string;
   name: string;
   category: string;
+  subCategory?: "Haute Couture" | "Fahrenheit Series" | "Smart AI" | "Optical Classic";
+  modelCode?: string;
+  designerBrand?: string;
+  availableColors?: string[];
   startingPrice: number;
   description: string;
   image: string;
   features: string[];
+  packageIncludes?: string;
+  badge?: string;
+  isNew?: boolean;
 }
+
+export interface SmartGlassesVideo {
+  id: string;
+  title: string;
+  subtitle: string;
+  videoSrc: string;
+  model: string;
+  duration: string;
+  tags: string[];
+  description: string;
+  highlights: string[];
+}
+
 
 export interface Inquiry {
   id: string;

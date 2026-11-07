@@ -15,6 +15,7 @@ import SmartLensSelector from "./components/SmartLensSelector";
 import HomeTrialAssistant from "./components/HomeTrialAssistant";
 import AboutSection from "./components/AboutSection";
 import BlogSection from "./components/BlogSection";
+import AISmartGlassesSection from "./components/AISmartGlassesSection";
 import StoreSection from "./components/StoreSection";
 import Footer from "./components/Footer";
 
@@ -73,6 +74,12 @@ export default function App() {
                 scrollToCatalog={scrollToCatalog} 
               />
               
+              {/* Featured Next-Gen AI Smart Glasses Technology Showcase */}
+              <AISmartGlassesSection 
+                setActiveTab={setActiveTab}
+                openBookingWithFrame={openBookingWithFrame}
+              />
+
               {/* Product Collections Catalog Showroom (Anchor destination) */}
               <div ref={catalogRef}>
                 <Products 
@@ -88,6 +95,31 @@ export default function App() {
               <StoreSection />
             </motion.div>
           )}
+
+          {/* Dedicated AI Smart Glasses Spotlight View */}
+          {activeTab === "smart-glasses" && (
+            <motion.div
+              key="smart-glasses-view"
+              initial={{ opacity: 0, y: 15 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -15 }}
+              transition={{ duration: 0.5 }}
+            >
+              <AISmartGlassesSection 
+                setActiveTab={setActiveTab}
+                openBookingWithFrame={openBookingWithFrame}
+              />
+              
+              {/* Filtered quick view for AI and Smart Wearables */}
+              <div className="bg-white py-12">
+                <Products 
+                  setActiveTab={setActiveTab}
+                  setSelectedFrameForTrial={setSelectedFrame}
+                />
+              </div>
+            </motion.div>
+          )}
+
 
           {/* Interactive AI Chat Stylist & Doorstep Booking */}
           {activeTab === "trial" && (

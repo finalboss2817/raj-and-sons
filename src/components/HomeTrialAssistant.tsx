@@ -43,12 +43,55 @@ const STEPS_DATA = [
 
 const PRESETS = [
   {
+    id: "ai-smart-glasses",
+    name: "AI Smart Glasses (MT5 & S2 Max)",
+    description: "4K First-Person View camera, AI dialogue translation, and open-ear surround acoustics.",
+    badge: "Next-Gen Tech",
+    image: "/assets/aistudio/WhatsApp_Image_2026-11-07_at_1.29.41_PM_54537955.jpeg"
+  },
+  {
+    id: "prada-b17-runway",
+    name: "Prada B17 Runway Black",
+    description: "Bold black architectural frame with silver Prada Milano emblem and Saffiano red hard case.",
+    badge: "Haute Couture",
+    image: "/assets/aistudio/WhatsApp_Image_2026-11-07_at_1.29.41_PM_54537955.jpeg"
+  },
+  {
+    id: "cartier-135-rimless",
+    name: "Cartier 135 Rimless Heritage",
+    description: "18k gold-finish fluted temples with double C-decor hinges and burgundy leather case.",
+    badge: "Ultra Luxury",
+    image: "/assets/aistudio/WhatsApp_Image_2026-11-07_at_1.29.41_PM__2__8e6cf90b.jpeg"
+  },
+  {
+    id: "louis-vuitton-984",
+    name: "Louis Vuitton 984 Millionaire",
+    description: "Deep square aviator with gold monogram top bar and warm amber-yellow sun lenses.",
+    badge: "Collector's Pick",
+    image: "/assets/aistudio/WhatsApp_Image_2026-11-07_at_1.29.42_PM_d395e0bb.jpeg"
+  },
+  {
+    id: "fahrenheit-fa-7848",
+    name: "Fahrenheit FA-7848 Double Bridge",
+    description: "Architectural modern square with double brow bridge in Olive, Slate, and Navy.",
+    badge: "Fahrenheit Series",
+    image: "/assets/aistudio/WhatsApp_Image_2026-11-07_at_1.29.43_PM_164597d0.jpeg"
+  },
+  {
+    id: "fahrenheit-fa-2306",
+    name: "Fahrenheit FA-2306 Custom Core",
+    description: "Italian acetate with visible core-wire temples in Demi Tortoise and Sapphire Blue.",
+    badge: "Fahrenheit Series",
+    image: "/assets/aistudio/WhatsApp_Image_2026-11-07_at_1.29.40_PM_a40a6fae.jpeg"
+  },
+  {
     id: "tr90-frames",
     name: "TR90 Series",
     description: "Swiss lightweight polymer. Extremely flexible, playground proof, and incredibly comfortable.",
     badge: "Ultralight Flex",
     image: "https://images.unsplash.com/photo-1511556532299-8f662fc26c06?auto=format&fit=crop&w=400&q=80"
   },
+
   {
     id: "metal-frames",
     name: "Architectural Metals",
